@@ -4,10 +4,15 @@ import factory.coffee_factory.CoffeeType;
 
 public class Customer {
 
+    private CoffeeType coffeeType;
 
-//    public CoffeeType orderCoffee (CoffeeType coffeeType){
-//        return coffeeType;
-//    };
+    public Customer(CoffeeType coffeeType) {
+        this.coffeeType = coffeeType;
+    }
+
+    public CoffeeType orderCoffee (){
+        return coffeeType;
+    };
 
 
 }

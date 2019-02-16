@@ -1,6 +1,6 @@
 package factory.coffee_factory;
 
-import coffee_type.Coffee;
+import coffee_type.BaseCoffee;
 
 public class CoffeeCreator {
     AmericannoCreator americannoCreator;
@@ -8,7 +8,7 @@ public class CoffeeCreator {
     LatteCreator latteCreator;
 
 
-    Coffee createCoffe (CoffeeType coffeeType){
+    public  BaseCoffee createCoffee(CoffeeType coffeeType){
         switch (coffeeType) {
             case AMERICANNO:
                 return americannoCreator.createAmericanno();

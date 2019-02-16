@@ -5,6 +5,6 @@ import coffee_type.Latte;
 public class LatteCreator implements LatteFactoyrInterface {
     @Override
     public Latte createLatte() {
-        return new Latte();
+        return new Latte(1,1,1,1,1);
     }
 }
