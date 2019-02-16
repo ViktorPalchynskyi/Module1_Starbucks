@@ -1,4 +1,4 @@
 package coffee_type;
 
-public class Espresso {
+public class Espresso extends Coffee {
 }

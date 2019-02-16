@@ -1,4 +1,4 @@
 package coffee_type;
 
-public class Latte {
+public class Latte  extends Coffee{
 }

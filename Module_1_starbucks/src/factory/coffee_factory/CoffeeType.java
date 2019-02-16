@@ -1,4 +1,4 @@
-package factory;
+package factory.coffee_factory;
 
 public enum CoffeeType {
     AMERICANNO,
