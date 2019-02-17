@@ -12,10 +12,14 @@ public class Main {
         try {
             for (Customer c : customers) {
                 starBucksCoffee.serveCustomer(c);
+
             }
         } catch (IndexOutOfBoundsException e) {
 
             System.out.println("Error:" + e + "You need check your array");
+        }
+        catch (NullPointerException e){
+            System.out.println("Customer has not existed yet");
         }
     }
 }
