@@ -3,9 +3,9 @@ package factory.coffee_factory;
 import coffee_type.BaseCoffee;
 
 public class CoffeeCreator {
-    AmericannoCreator americannoCreator;
-    EspressoCreator espressoCreator;
-    LatteCreator latteCreator;
+    AmericannoCreator americannoCreator = new AmericannoCreator();
+    EspressoCreator espressoCreator = new EspressoCreator();
+    LatteCreator latteCreator = new LatteCreator();
 
 
     public  BaseCoffee createCoffee(CoffeeType coffeeType){

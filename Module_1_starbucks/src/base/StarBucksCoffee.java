@@ -6,7 +6,7 @@ import factory.coffee_factory.CoffeeType;
 
 public class StarBucksCoffee {
 
-    CoffeeCreator coffeeCreator;
+    CoffeeCreator coffeeCreator = new CoffeeCreator();
 
     public void serveCustomer(Customer customer) {
             coffeeCreator.createCoffee(CoffeeType.AMERICANNO);

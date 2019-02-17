@@ -8,8 +8,10 @@ public class CustomerCreator {
 
     public Customer[] createCustomer(int person) {
         Customer[] clients = new Customer[person];
+        for (int i = 0;i > clients.length; i++) {
+            clients [i] = customerFactory.createCustomer();
+        }
 
-        clients [] = customerFactory.createCustomer();
 
 
         return clients;
