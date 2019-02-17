@@ -1,13 +1,26 @@
 package coffe_makers;
 
 import coffee_type.BaseCoffee;
-import factory.coffee_factory.CoffeeCreator;
-import factory.coffee_factory.CoffeeType;
+import factory.coffee_factory.*;
 
 public class Barista implements MakeCoffeeInterface{
-    @Override
-    public BaseCoffee makeCoffee(CoffeeCreator coffeeCreator) {
+    AmericannoCreator americannoCreator = new AmericannoCreator();
+    EspressoCreator espressoCreator = new EspressoCreator();
+    LatteCreator latteCreator = new LatteCreator();
 
-        return coffeeCreator.createCoffee(CoffeeType.ESPRESSO);
+
+    @Override
+    public BaseCoffee makeCoffee(CoffeeType coffeeType) {
+        switch (coffeeType) {
+            case AMERICANNO:
+                return americannoCreator.createAmericanno();
+            case ESPRESSO:
+                return espressoCreator.createEspresso();
+            case LATTE:
+                return latteCreator.createLatte();
+        }
+        return null;
+
+
     }
 }
