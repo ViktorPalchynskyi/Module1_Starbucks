@@ -7,7 +7,6 @@ import factory.customer_factory.CustomerCreator;
 
 public class StarBucksCoffee {
 
-    CoffeeCreator coffeeCreator = new CoffeeCreator();
     Barista barista = new Barista();
     CoffeeMachine coffeeMachine = new CoffeeMachine();
     CustomerCreator customerCreator = new CustomerCreator();
