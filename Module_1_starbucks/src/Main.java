@@ -13,8 +13,9 @@ public class Main {
             for (Customer c : customers) {
                 starBucksCoffee.serveCustomer(c);
             }
-        } catch (Exception e) {
+        } catch (IndexOutOfBoundsException e) {
 
+            System.out.println("Error:" + e + "You need check your array");
         }
     }
 }
