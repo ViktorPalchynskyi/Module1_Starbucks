@@ -7,15 +7,19 @@ public class Main {
     public static void main(String[] args) {
         StarBucksCoffee starBucksCoffee = new StarBucksCoffee();
         CustomerCreator customerCreator = new CustomerCreator();
-        Customer [] customers = customerCreator.createCustomer(10);
 
-        try {
-            for (Customer c : customers) {
-                starBucksCoffee.serveCustomer(c);
-            }
-        } catch (IndexOutOfBoundsException e) {
+        starBucksCoffee.serveCustomer();
 
-            System.out.println("Error:" + e + "You need check your array");
-        }
+
+//        try {
+//            for (Customer c : customers) {
+//                starBucksCoffee.serveCustomer(c);
+//
+//            }
+//        } catch (IndexOutOfBoundsException e) {
+//
+//            System.out.println("Error:" + e + "You need check your array");
+//        }
+
     }
 }

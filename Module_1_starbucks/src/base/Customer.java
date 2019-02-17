@@ -6,6 +6,7 @@ public class Customer {
 
     private CoffeeType coffeeType;
 
+
     public Customer(CoffeeType coffeeType) {
         this.coffeeType = coffeeType;
     }
